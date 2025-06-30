@@ -1,0 +1,8 @@
+[user]
+	name = "doro-hd"
+	email = "sid.doro-hd@protonmail.com"
+[core]
+	editor = "nvim"
+	excludesFile = "~/.config/git/ignore"
+[init]
+	defaultBranch = "main"
