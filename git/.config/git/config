@@ -6,3 +6,5 @@
 	excludesFile = "~/.config/git/ignore"
 [init]
 	defaultBranch = "main"
+[push]
+	autoSetupRemote = true
