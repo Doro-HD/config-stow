@@ -4,13 +4,27 @@
 -- See the kickstart.nvim README for more information
 return {
   {
+    'stevearc/oil.nvim',
+    config = function()
+      require('oil').setup {
+        view_options = { show_hidden = true },
+      }
+    end,
+    -- Optional dependencies
+    dependencies = { { 'echasnovski/mini.icons', opts = {} } },
+    -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
+    -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
+    lazy = false,
+
+    vim.keymap.set('n', '<leader>ec', '<cmd>Oil<cr>', { desc = '[E]xplore current directory' }),
+  },
+  {
     'mikavilpas/yazi.nvim',
     keys = {
-      '<leader>sft',
-      desc = '[S]earch [F]ile [T]ree',
+      '<leader>st',
+      desc = '[S]earch [T]ree with Yazi',
       mode = { 'n', 'v' },
       '<cmd>Yazi<cr>',
-      desc = 'Open yazi at the current file',
     },
   },
 }
