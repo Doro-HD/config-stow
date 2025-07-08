@@ -19,12 +19,7 @@ return {
     vim.keymap.set('n', '<leader>ec', '<cmd>Oil<cr>', { desc = '[E]xplore current directory' }),
   },
   {
-    'mikavilpas/yazi.nvim',
-    keys = {
-      '<leader>st',
-      desc = '[S]earch [T]ree with Yazi',
-      mode = { 'n', 'v' },
-      '<cmd>Yazi<cr>',
-    },
+    'tikavilpas/yazi.nvim',
+    vim.keymap.set('n', '<leader>ey', '<cmd>Yazi<cr>', { desc = '[E]xplore with Yazi' }),
   },
 }
