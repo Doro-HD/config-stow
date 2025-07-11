@@ -22,4 +22,7 @@ return {
     'tikavilpas/yazi.nvim',
     vim.keymap.set('n', '<leader>ey', '<cmd>Yazi<cr>', { desc = '[E]xplore with Yazi' }),
   },
+  {
+    'folke/twilight.nvim',
+  },
 }
