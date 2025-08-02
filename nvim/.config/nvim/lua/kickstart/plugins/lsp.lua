@@ -1,5 +1,5 @@
 return {
--- LSP Plugins
+  -- LSP Plugins
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
     -- used for completion, annotations and signatures of Neovim apis
@@ -218,7 +218,16 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
-        ts_ls = {},
+        ts_ls = {
+          root_dir = require('lspconfig').util.root_pattern { 'package.json', 'tsconfig.json' },
+          single_file_support = false,
+          settings = {},
+        },
+        denols = {
+          root_dir = require('lspconfig').util.root_pattern { 'deno.json', 'deno.jsonc' },
+          single_file_support = false,
+          settings = {},
+        },
         --
 
         lua_ls = {
@@ -235,6 +244,8 @@ return {
             },
           },
         },
+        jsonls = {},
+        svelte = {},
       }
 
       -- Ensure the servers and tools above are installed
