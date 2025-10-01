@@ -8,6 +8,7 @@ return {
     config = function()
       require('oil').setup {
         view_options = { show_hidden = true },
+        delete_to_trash = true,
       }
     end,
     -- Optional dependencies
