@@ -1,5 +1,5 @@
 return {
-{ -- You can easily change to a different colorscheme.
+  { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
     -- change the command in the config to whatever the name of that colorscheme is.
     --
@@ -13,6 +13,7 @@ return {
           light = 'latte',
           dark = 'frappe',
         },
+        transparent_background = true,
       }
 
       -- Load the colorscheme here.
@@ -20,5 +21,6 @@ return {
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       vim.cmd.colorscheme 'catppuccin'
     end,
-  }
+  },
 }
+
