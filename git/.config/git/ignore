@@ -5,3 +5,8 @@ node_modules
 .wrangler
 dist
 build
+.svelte-kit
+
+# editor
+.zed
+.vscode
