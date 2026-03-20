@@ -20,10 +20,6 @@ return {
     vim.keymap.set('n', '<leader>ec', '<cmd>Oil<cr>', { desc = '[E]xplore current directory' }),
   },
   {
-    'tikavilpas/yazi.nvim',
-    vim.keymap.set('n', '<leader>ey', '<cmd>Yazi<cr>', { desc = '[E]xplore with Yazi' }),
-  },
-  {
     'folke/twilight.nvim',
   },
 }
